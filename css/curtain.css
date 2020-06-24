@@ -1,0 +1,71 @@
+.curtain-task-name{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtain-task-name .close-task{
+    color: white;
+    font-size: 2rem;
+    padding: 0.2rem 0.8rem;
+    text-decoration: none;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+}
+
+.curtain-task-name .close-task:hover,.close-task:visited{
+    color: white;
+}
+
+.curtain .close-task:active{
+    border: 1px solid #D2691E;
+}
+
+.curtain-task-name .title-task{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 15%;
+}
+
+.curtain-task-name .content-task{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.curtain-task-name .input-task{
+    margin-bottom: 2rem;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    color:#DCDCDC;
+    border-bottom: 1px solid white;
+}
+
+.curtain-task-name .confirm-task{
+    background-color: #6A5ACD;
+    padding: 0.7rem 0rem;
+    color: white;
+}
+
+
+@media (max-height:400px){
+    .curtain-task-name .title-task{
+        top: 5%;
+        font-size: 1rem;
+    }
+}

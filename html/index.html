@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/curtain.css">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/newTask.css">
+    <link rel="stylesheet" href="../css/tasks.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../icons/pageIcon.ico" type="image/x-icon">
+    <title>TodoApp</title>
+
+</head>
+
+<body onload="showName()">
+
+    <main>
+        <div class="content-container">
+
+            <div class="curtain-task-name">
+                <a class="close-task">&times;</a>
+                <p class="title-task">NOME DA TAREFA</p>
+                <div class="content-task">
+                    <input type="text" placeholder="Digite aqui" class="input-task">
+                    <button type="button" class="btn border-0 rounded-0 confirm-task">Confirmar</button>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="profile-container">
+                    <label for="input-profile" class="profile"><img src="../images/profile.svg"></label>
+                    <input type="file" id="input-profile" accept="image/png, image/jpeg" onchange="renderizaPerfil(this.files)">
+                    <p id="profile-name"></p>
+                </div>
+            </header>
+
+            <div class="new-task-container">
+                <div class="new-task-button"><img src="../images/plus.svg"></div>
+                <p class="new-task-text">Adicionar tarefa</p>
+            </div>
+
+            <div class="tasks-container"></div>
+
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="../js/profile.js"></script>
+    <script src="../js/name.js"></script>
+    <script src="../js/createTask.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    
+</body>
+
+</html>
